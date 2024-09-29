@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+        h1{
+            font-size: 90px;
+            text-align: center;
+
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: aqua;
+        }
+        @media screen and (max-width: 768px) {
+            body{
+                 background-color: bisque;
+            }
+            h1{
+                font-size: 75px;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            body{
+                background-color: brown;
+            }
+            h1{
+                font-size: 70px;
+            }
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            padding: 0px;
+            background-color: blue;
+        }
+        .cont_text{
+            height: 100%;
+            width: 35%;
+            background-color: chartreuse;
+        }
+        .cont_img{
+            height: 200px;
+            width: 65%;
+            background-color: darkorange;
+        }
+        .cont_img img{
+            height: 100%;
+            width: 100%;
+        }
+        @media screen and (max-width: 500px) {
+            .container{
+                flex-direction: column;
+            }
+            .cont_img{
+                width: 100%;
+                padding: 0px;
+            }
+            .cont_text{
+                width: 100%;
+                padding: 0px;
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image and Text</h1>
+    <div class="container">
+        <div class="cont_text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam distinctio velit sint natus reprehenderit quis, sunt odio facilis tempore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nemo quaerat similique qui atque architecto doloremque vero dolor fugiat fuga! </p></div>
+        <div class="cont_img">
+            <img src="https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

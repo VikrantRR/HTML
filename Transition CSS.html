@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color:chocolate;
+            transition: all;
+            /* transition-property: all; */
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            /* transition-delay: 1s; */
+            transform-origin: right;
+            transition-behavior: revert;
+        }
+        .box:hover{
+            width: 100%;
+            height: 100vh;
+            background-color:darkseagreen;
+            background-image:url(../IMG_20210105_001658_175.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

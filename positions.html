@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .parent{
+            width: 100%;
+            background-color: aqua;
+            height: 4000px;
+            /* position: relative; */
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color: blanchedalmond;
+            margin: 10px;
+        }
+        #child1{
+            position: absolute;
+            /* position: relative; */
+            top: 40%;
+            right: 40%;
+            background-color: brown;
+        }
+        #child2{
+            background-color: yellow;
+            height: 40px;
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+        }
+        #child3{
+            background-color: bisque;
+            position: relative;
+            z-index: 99;
+        }
+        #child4{
+            margin-top: -80px;
+            position: absolute;
+            z-index: 88;
+        }
+    </style>
+</head>
+<body id="home">
+    <div class="parent">
+        <a href="#home"><div class="child" id="child1"></div></a>
+    <div class="child" id="child2"></div>
+    <div class="child" id="child3"></div>
+    <div class="child" id="child4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        /* .parent::first-line{
+            background-color: aqua;
+            font-size: 40px;
+        }
+        .parent::first-letter{
+            background-color: black;
+            font-size: 40px;
+        }
+        p::before{
+            content: this is a paragraph;
+        }
+        p::after{
+            content: this is a paragraph;
+        } */
+
+        .div{
+            height: 40px;
+            width: 50px;
+            background-color: chocolate;
+        }
+
+        .div::before{
+            content: "";
+            height: 10px;
+            width: 50px;
+            background-color: beige;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent"> -->
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, totam magni quae voluptas vel accusamus dignissimos beatae tenetur! Suscipit, nulla! Tempore fugit error at debitis, facilis nulla laudantium doloremque labore?</p> -->
+    <!-- </div> -->
+</body>
+</html>
